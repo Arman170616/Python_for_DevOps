@@ -100,6 +100,15 @@ Convolutional neural networks, Restricted Boltzmann machines, Continuous valued 
 
 
 
+A Neural Network consists of the following components:
+
+Neurons – A neuron is a mathematical function designed to imitate the functioning of a biological neuron. It computes the weighted average of the data input and passes the information through a nonlinear function, a.k.a. The activation function (for examples, the sigmoid). 
+Connection and weights – As the name suggests, connections connect a neuron in one layer to another neuron in the same layer or another layer. Each connection has a weight value linked to it. Here, a weight represents the strength of the connection between the units. The aim is to reduce the weight value to decrease the possibilities of loss (error).
+Propagation function – Two propagation functions work in a Neural Network: forward propagation that delivers the “predicted value” and backward propagation that delivers the “error value.”
+Learning rate – Neural Networks are trained using Gradient Descent to optimize the weights. Back-propagation is used at each iteration to calculate the derivative of the loss function in reference to each weight value and subtract it from that weight. Learning rate decides how quickly or slowly you want to update the weight (parameter) values of the model.
+
+
+
 
 
 

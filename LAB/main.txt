@@ -1,0 +1,109 @@
+Neural Networks use the architecture of human neurons which have multiple inputs, 
+a processing unit, and single/multiple outputs. There are weights associated with each connection of neurons. By adjusting these weights,
+a neural network arrives at an equation which is used for predicting outputs on new unseen data. 
+This process is done by backpropagation and updating of the weights.
+
+Types of Neural Networks
+Different types of neural networks are used for different data and applications. 
+The different architectures of neural networks are specifically designed to work on those particular types of data or domain. 
+Let’s start from the most basic ones and go towards more complex ones.
+
+
+Perceptron
+Feed Forward Networks
+Multi-Layer Perceptron
+Radial Based Networks
+Convolutional Neural Networks
+Recurrent Neural Networks
+Long Short-Term Memory Networks
+
+
+
+The Perceptron is the most basic and oldest form of neural networks. It consists of just 1 
+neuron which takes the input and applies activation function on it to produce a binary output. 
+It doesn’t contain any hidden layers and can only be used for binary classification tasks.
+
+The neuron does the processing of addition of input values with their weights. 
+The resulted sum is then passed to the activation function to produce a binary output.
+
+
+The Feed Forward (FF) networks consist of multiple neurons and hidden layers which are connected to each other. 
+These are called “feed-forward” because the data flow in the forward direction only, and there is no backward propagation. 
+Hidden layers might not be necessarily present in the network depending upon the application.
+
+FF networks are used in:
+Classification
+Speech recognition
+Face recognition
+Pattern recognition
+
+Multi-layer Perceptron is bi-directional, i.e., Forward propagation of the inputs, and the backward propagation of the weight updates. 
+The activation functions can be changes with respect to the type of target. Softmax is usually used for multi-class classification,
+Sigmoid for binary classification and so on. 
+These are also called dense networks because all the neurons in a layer are connected to all the neurons in the next layer.
+
+They are used in Deep Learning based applications but are generally slow due to their complex structure.
+
+
+
+Convolutional Neural Networks
+When it comes to image classification, the most used neural networks are Convolution Neural Networks (CNN). 
+CNN contain multiple convolution layers which are responsible for the extraction of important features from the image. 
+The earlier layers are responsible for low-level details and the later layers are responsible for more high-level features.
+
+The Convolution operation uses a custom matrix, also called as filters, to convolute over the input image and produce maps. 
+These filters are initialized randomly and then are updated via backpropagation. One example of such a filter is the Canny Edge Detector, 
+which is used to find the edges in any image. 
+
+After the convolution layer, there is a pooling layer which is responsible for the aggregation of the maps produced from the convolutional layer. 
+It can be Max Pooling, Min Pooling, etc. For regularization, 
+CNNs also include an option for adding dropout layers which drop or make certain neurons inactive to reduce overfitting and quicker convergence.
+
+CNNs use ReLU (Rectified Linear Unit) as activation functions in the hidden layers. As the last layer, 
+the CNNs have a fully connected dense layer and the activation function mostly as Softmax for classification, and mostly ReLU for regression.
+
+
+
+
+Recurrent Neural Networks
+Recurrent Neural Networks come into picture when there’s a need for predictions using sequential data. 
+Sequential data can be a sequence of images, words, etc. The RNN have a similar structure to that of a Feed-Forward Network, 
+except that the layers also receive a time-delayed input of the previous instance prediction. 
+This instance prediction is stored in the RNN cell which is a second input for every prediction.
+
+
+
+
+
+LSTM neural networks overcome the issue of Vanishing Gradient in RNNs by adding a special memory cell that can store information for
+long periods of time. LSTM uses gates to define which output should be used or forgotten. It uses 3 gates: Input gate, 
+Output gate and a Forget gate. The Input gate controls what all data should be kept in memory. 
+The Output gate controls the data given to the next layer and the forget gate controls when to dump/forget the data not required. 
+
+LSTMs are used in various applications such as:
+
+Gesture recognition
+Speech recognition
+Text prediction
+
+
+
+
+
+What are 3 major categories of neural networks?
+A neural network is a computational approach to learning, analogous to the brain. There are three major categories of neural networks.
+Classification, Sequence learning and Function approximation are the three major categories of neural networks. 
+There are many types of neural networks like Perceptron, Hopfield, Self-organizing maps, Boltzmann machines, Deep belief networks, Auto encoders, 
+Convolutional neural networks, Restricted Boltzmann machines, Continuous valued neural networks, Recurrent neural networks and Functional link networks.
+
+
+
+
+
+
+
+
+
+
+
+https://www.tensorflow.org/tutorials/images/cnn
